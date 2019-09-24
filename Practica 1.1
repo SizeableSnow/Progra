@@ -1,0 +1,41 @@
+/* practica 1
+Luis Angel Bravo Albiter 1AV6 
+*/
+
+#include<stdio.h>
+
+int main(void){
+	int a, b, c, opt;
+	
+	printf("\nMenu de la Calculadora:");
+	printf("\n1. Sumar.");
+	printf("\n2. Restar.");
+	printf("\n3. Multiplicar.");
+	printf("\n Seleccione una opcion: "); scanf("%i",&opt);
+	
+	printf("Digite el primer numero: ");
+	scanf("%i",&a);
+	printf("Digite el segundo numero: ");
+	scanf("%i",&b);
+	
+	
+	
+	if(opt==1){
+		c = a + b;
+	}
+	else if(opt==2){
+		c = a - b;
+	}
+	else{
+		c = a * b;
+	}
+
+	
+	printf("El resultado es: %i",c);
+	
+	
+	
+	
+	
+	return 0;
+}
