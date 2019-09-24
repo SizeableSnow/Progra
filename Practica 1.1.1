@@ -1,0 +1,47 @@
+/* Practica 1
+Luis Angel Bravo Albiter */
+#include<stdio.h>
+
+int main(void){
+	int a, b, c, opt;
+	
+
+	
+	printf("\nMenu de la Calculadora:");
+	printf("\n1. Sumar.");
+	printf("\n2. Restar.");
+	printf("\n3. Multiplicar.");
+	printf("\n4. Division.");
+	printf("\n Seleccione una opcion: "); scanf("%i",&opt);
+	
+	printf("Digite el primer numero: ");
+	scanf("%i",&a);
+	printf("Digite el segundo numero: ");
+	scanf("%i",&b);
+	
+	
+	
+	if(opt==1){
+		c = a + b;
+	}
+	else if(opt==2){
+		c = a - b;
+	}
+	else if(opt==3){
+		c = a * b;
+	}
+	else if(a>0){
+        if(b>0){
+            c = a / b;
+        }
+		else{
+            printf("\nNo puedes dividir un numero entre 0\n");
+        }
+	}
+	printf("\n El resultado es: %i\n",c);
+	
+	
+	
+	return 0;
+	
+}	
